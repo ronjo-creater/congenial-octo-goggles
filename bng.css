@@ -1,0 +1,277 @@
+/* Scoped styling only for your form container */
+#formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form box */
+#formContainer .form-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  transition: 0.4s ease-in-out;
+}
+
+/* Headings */
+#formContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+#formContainer input[type="text"],
+#formContainer input[type="email"],
+#formContainer input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#formContainer input:focus {
+  border-color: #1e3c72;
+  box-shadow: 0 0 5px rgba(30, 60, 114, 0.4);
+}
+
+/* Buttons */
+#formContainer button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1e3c72;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#formContainer button:hover {
+  background: #2a5298;
+}
+
+/* Switch links */
+#formContainer .switch {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+#formContainer .switch:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+/* TABLE STYLING */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* IMAGE STYLING */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+  
+  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.3); /* horizontal, vertical, blur, color */
+  border-radius: 8px; /* Optional: gives images rounded corners */
+
+
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* AUDIO & VIDEO STYLING */
+audio{
+  width: 500px;
+  outline: none;
+  margin: 15px 0;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #000;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  height: 100px;
+}
+video {
+  width: 500px;
+  outline: none;
+  margin: 15px 0;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #000;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: add a custom look to audio/video controls if browser supports */
+audio::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel {
+  background-color: #222;
+  color: white;
+}
+/* BUTTON STYLING */
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+a.btn:hover {
+  background-color: #0056b3;
+}
+/* Style the phone input container with a colorful background */
+.phone-input {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the actual phone input */
+.phone-input input[type="tel"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 2px #ff8a00;
+}
+
+/* Placeholder style */
+.phone-input input[type="tel"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* On focus — change border and shadow color */
+.phone-input input[type="tel"]:focus {
+  box-shadow: inset 0 0 0 2px #007bff, 0 0 8px rgba(0, 123, 255, 0.4);
+  background-color: #f0f8ff;
+}
+
+/* Valid input - green border */
+.phone-input input[type="tel"].valid {
+  box-shadow: inset 0 0 0 2px #28a745;
+}
+
+/* Invalid input - red border */
+.phone-input input[type="tel"].invalid {
+  box-shadow: inset 0 0 0 2px #dc3545;
+}
+button[type="submit"] {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Hover effect */
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #0056b3, #0096c7);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Active click effect */
+button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+}
+#flag-display {
+  font-size: 24px;
+}
+
+input.valid {
+  border-color: #28a745;
+}
+
+input.invalid {
+  border-color: #dc3545;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* FOOTER STYLING */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
